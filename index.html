@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="game-info">
+        <p class="info-text">
+            LIVES:
+        </p>
+        <div class="lives" id="lives">
+            <img class="lives-pumpkin" src="images/pumpkin.png" alt="lives">
+            <img class="lives-pumpkin" src="images/pumpkin.png" alt="lives">
+            <img class="lives-pumpkin" src="images/pumpkin.png" alt="lives">
+        </div>
+        <p class="info-text">
+            SCORE:
+        </p>
+        <p id="score" class="info-text">
+            0
+        </p>
+        <p class="info-text">
+            LEVEL:
+        </p>
+        <p id="level" class="info-text">
+            1
+        </p>
+    </div>
+    <div id="game">
+        <div id="pumpkin"></div>
+    </div>
+    <div class="btn-panel">
+        <button id="btn_left"></button>
+        <button id="btn_right"></button>
+    </div>
+    <div>
+        <button id="btn_start">START</button>
+    </div>
+    <p id="output" style="color: aquamarine;font: 20px bold Arial">
+
+    </p>
+    <script src="game.js"></script>
+</body>
+</html>

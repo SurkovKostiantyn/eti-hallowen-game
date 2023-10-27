@@ -1,0 +1,107 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    gap: 20px;
+    background: black;
+}
+
+p{
+    margin: 0;
+}
+
+#game{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    outline: 10px solid orange;
+    border: 10px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    background: black url("images/bg.jpg") center;
+    background-size: cover;
+}
+
+#pumpkin{
+    width: 60px;
+    height: 60px;
+    background: url("images/pumpkin.png") center;
+    background-size: 100% 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    transition: left 0.2s linear;
+}
+
+.candy{
+    width: 60px;
+    height: 60px;
+    background: url("images/cand_bean.png") center;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+.game-info{
+    width: 270px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.info-text{
+    text-align: left;
+    font: 30px/30px Impact;
+    color: orange;
+}
+
+.lives{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30px;
+}
+
+.lives-pumpkin{
+    height: 30px;
+    object-fit: cover;
+}
+
+.btn-panel{
+    display: flex;
+    gap: 10px;
+}
+
+#btn_start{
+    padding: 0 20px;
+    background-color: black;
+    color: orange;
+    cursor: pointer;
+    font: 20px/60px Impact;
+    outline: none;
+    border: 2px solid orange;
+}
+
+#btn_left{
+    width: 120px;
+    height: 60px;
+    background: orange url("images/arrow_left.png") center;
+    background-size: 100% 100%;
+    border: 2px solid orange;
+}
+#btn_right{
+    width: 120px;
+    height: 60px;
+    background: orange url("images/arrow_right.png") center;
+    background-size: 100% 100%;
+    border: 2px solid orange;
+}
+
+.lives span{
+    color: orange;
+    font: 30px/30px Impact;
+}
