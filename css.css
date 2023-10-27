@@ -16,8 +16,8 @@ p{
 
 #game{
     position: relative;
-    width: 500px;
-    height: 500px;
+    width: clamp(300px,90%,  600px);
+    height: clamp( 400px, 50%,500px);
     outline: 10px solid orange;
     border: 10px solid black;
     display: flex;
